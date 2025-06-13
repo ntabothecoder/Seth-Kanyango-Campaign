@@ -614,6 +614,7 @@ footer {
   border-top: 1px solid #1a3a6e;
   padding-top: 10px;
   color: #CCCCCC;
+  height: 30px;
 }
 
 .site-footer {
@@ -775,4 +776,151 @@ html, body {
 .site-footer a {
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+
+/* === BIOGRAPHY SECTION === */
+.biography p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+
+/* === TESTIMONIALS SECTION === */
+.testimonials {
+  background-color: #f8f9fa;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background-color: white;
+  border-left: 4px solid #FFC72C;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 300px;
+  font-size: 1rem;
+}
+
+.testimonial h4 {
+  margin-top: 15px;
+  color: #002855;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* === GALLERY SECTION === */
+.gallery {
+  background-color: #ffffff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* === MEDIA & PRESS SECTION === */
+.media {
+  background-color: #f1f1f1;
+}
+
+.media-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.media-links li {
+  margin-bottom: 15px;
+}
+
+.media-links a {
+  text-decoration: none;
+  color: #002855;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.media-links a:hover {
+  color: #FFC72C;
+}
+
+/* === FAQ SECTION === */
+.faq {
+  background-color: #ffffff;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.faq-item h4 {
+  color: #002855;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* === CONTACT SECTION === */
+.contact {
+  background-color: #f8f8f8;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 30px auto 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #002855;
+  outline: none;
+}
+
+.contact-form button {
+  align-self: flex-start;
 }
