@@ -5,6 +5,12 @@
     --slate-gray: #5A6772;
     --light-gray: #F5F5F5;
 }
+/* Remove default margins*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 /* Reset some basic styles */
 body, h1, p, ul {
@@ -14,7 +20,7 @@ body, h1, p, ul {
 }
 
 /* Header Styling */
-.main-header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +32,7 @@ body, h1, p, ul {
 
 .logo h1 {
   font-size: 28px;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 .logo p {
