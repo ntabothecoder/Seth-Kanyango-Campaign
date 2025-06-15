@@ -204,7 +204,26 @@
     </div>
   </footer>
   <script>
-    
+    const enddate = new Date("2026-02-15T00:00:00").getTime;
+    const countdownId = document.getElementById("countdown-banner");
+
+    // Remember to update the appropriate date once client provides an accurate date
+
+    function updateBanner() {
+      const now = new Date().getTime();
+
+      const distance = enddate - now;
+      if (distance < o) {
+        countdownId.innerHTML = "The day is here";
+        return;
+      }
+
+      const months = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+
+
+
+    }
   </script>
 
 </body>
